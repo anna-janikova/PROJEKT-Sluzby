@@ -32,29 +32,21 @@ h1 {
     font-weight: medium;
     font-size: 28px;
     margin-top: 40px;
-    margin-bottom: 40px;
-}
+    margin-bottom: 40px;}
 
 .title {
     position: relative;
-    /* Nastavíme relativní pozici, abychom mohli použít absolutní pozici pro pseudoprvek */
 }
 
 .title::after {
     content: "";
     display: block;
-    /* Přidáme obsah do pseudoprvku */
     position: absolute;
-    /* Nastavíme absolutní pozici, aby byl pseudoprvek umístěn relativně k nadpisu */
     bottom: -10px;
-    /* Posuneme pseudoprvek dolů o 5px, tedy pod nadpis */
     left: 50%;
-    /* Nastavíme levý okraj na 0, abychom získali celou šířku nadpisu */
     transform: translateX(-50%);
     width: 60px;
-    /* Nastavíme šířku na 100%, aby překrývala celou šířku nadpisu */
     border-bottom: 2px solid #407BFF;
-    /* Nastavíme podtržení pomocí hodnoty border-bottom */
 }
 
 .main-text {
@@ -130,17 +122,15 @@ h2 {
     .options-wrapper {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .option {
         flex: 0 0 calc(33.33% - 20px);
-        /* Sets each div to take up 33.33% width minus 20px space */
-        margin: 10px;
         flex-direction: column;
     }
 
-    .icon{
+    .icon {
         margin-top: 40px
     }
 
@@ -159,7 +149,7 @@ h2 {
     }
 
     .button {
-        margin: 10px 5px;
+        margin: 0px 10px;
     }
 }
 
@@ -167,11 +157,10 @@ h2 {
 
     .all-wrapper {
         width: 100%;
-        /* Celý obsah bude mít 100% šířku stránky */
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 0;
+        margin: 60px 0;
     }
 
     .sluzby {
@@ -182,24 +171,65 @@ h2 {
     .intro {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
         width: 100%;
+        justify-content: space-between;
+        padding-bottom: 80px;
+       
+
+    }
+
+    .happy_image{
+       flex-basis: 490px;
+    }
+    .happy_image img{
+       max-width: 425px;
     }
 
     .texts-part-1 {
         text-align: left;
+         flex-basis: 490px;
     }
 
+    .kancelar {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        padding-bottom: 80px;
+    }
+
+
     .title::after {
-        left: 10px;
+        left: 0;
+        text-align: left;
+        transform: translateX(0%);
     }
 
     .buttons {
         justify-content: left;
     }
+    .blue{
+        margin-left: 0;
+    }
+
     .kancelar {
         display: flex;
+        justify-content: space-between;
+    }
+
+    .options-wrapper {
+        flex-basis: 550px
+    }
+
+    .texts-part-2 {
+        flex-basis: 430px;
+        text-align: left;
+    }
+    .delegati {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+    }
+    .texts-part-3 {
+        flex-basis: 430px;
+        text-align: left;
     }
 }
-
-
