@@ -66,15 +66,13 @@ h1 {
 .buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    /* Set the flex direction to column */
+    justify-content: center;
     align-items: center;
-    /* Center align items horizontally */
+   
 }
 
 
 .button {
-    align-self: flex-center;
     color: white;
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
@@ -121,3 +119,48 @@ h2 {
     width: 40px;
     margin: 20px;
 }
+
+@media screen and (min-width: 640px) {
+    .sluzby{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .options-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .option {
+        flex: 0 0 calc(33.33% - 20px);
+        /* Sets each div to take up 33.33% width minus 20px space */
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .option p {
+        text-align: center;
+        height: 50px;
+        margin: 20px 10px;
+    }
+    .main-text{
+        max-width: 550px;
+    }
+    .button{
+        margin: 10px 5px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .all-wrapper{
+        width: 100%; /* Celý obsah bude mít 100% šířku stránky */
+        display: flex;
+        justify-content: center
+    }
+
+    .sluzby {
+        width: 1040px;
+    }
+}
+
