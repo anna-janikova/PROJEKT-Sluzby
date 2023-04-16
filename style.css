@@ -1,0 +1,123 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+    color: #8B8B8B;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.all-wrapper {
+    margin: 60px 20px
+}
+
+.happy_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.happy_image img {
+    width: 100%;
+    max-width: 350px;
+}
+
+
+h1 {
+    color: black;
+    font-weight: medium;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.title {
+    position: relative;
+    /* Nastavíme relativní pozici, abychom mohli použít absolutní pozici pro pseudoprvek */
+}
+
+.title::after {
+    content: "";
+    display: block;
+    /* Přidáme obsah do pseudoprvku */
+    position: absolute;
+    /* Nastavíme absolutní pozici, aby byl pseudoprvek umístěn relativně k nadpisu */
+    bottom: -10px;
+    /* Posuneme pseudoprvek dolů o 5px, tedy pod nadpis */
+    left: 50%;
+    /* Nastavíme levý okraj na 0, abychom získali celou šířku nadpisu */
+    transform: translateX(-50%);
+    width: 60px;
+    /* Nastavíme šířku na 100%, aby překrývala celou šířku nadpisu */
+    border-bottom: 2px solid #407BFF;
+    /* Nastavíme podtržení pomocí hodnoty border-bottom */
+}
+
+.main-text {
+    font-weight: 300;
+    margin-bottom: 30px;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    /* Set the flex direction to column */
+    align-items: center;
+    /* Center align items horizontally */
+}
+
+
+.button {
+    align-self: flex-center;
+    color: white;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-bottom: 10px
+}
+
+.blue {
+    background-color: #407BFF;
+
+}
+
+.gray {
+    background-color: #8B8B8B;
+}
+
+h2 {
+    color: black;
+    font-weight: medium;
+    font-size: 16px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.option {
+    display: flex;
+    background-color: white;
+    font-size: 13px;
+    align-items: center;
+    margin: 15px 0;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    border-radius: 10px;
+}
+
+.option p {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.icon {
+    width: 40px;
+    margin: 20px;
+}
