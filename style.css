@@ -223,7 +223,11 @@ h2 {
     }
 
     .options-wrapper {
-        flex-basis: 550px
+        flex-basis: 550px;
+    }
+    .option {
+        margin: 0;
+    
     }
 
     .texts-part-2 {
